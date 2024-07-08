@@ -2,7 +2,7 @@ name: aptible
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch: {}
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       uses: aptible/aptible-deploy-action@v4
       with:
         type: git
-        app: leech-bot
-        environment: anmol
+        app: aeon
+        environment: anmol-eu
         username: ${{ secrets.APTIBLE_USERNAME }}
         password: ${{ secrets.APTIBLE_PASSWORD }}
